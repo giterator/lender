@@ -36,7 +36,12 @@ public class Main {
                 profit = profit + (amounts[i] * interestRates[i]);
             }
         }
-        return profit;
+        if (profit == 0.0)
+            return 0.0;
+
+        //return profit;
+
+
     }
 
     public static void main(String[] args) {
